@@ -27,6 +27,9 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+*[hidden] {
+	display: none;
+}
 body {
 	line-height: 1;
 }
@@ -46,15 +49,18 @@ table {
 	border-spacing: 0;
 }
 body {
+	font-weight: 300;
   font-family: 'Source Sans Pro', sans-serif;
   background-color: ${(props) => props.theme.bgColor};
   color: ${(props) => props.theme.textColor};
+  line-height: 1.2;
 }
 * {
   box-sizing: border-box;
 }
 a {
   text-decoration: none;
+  color: inherit;
 }
 `;
 
